@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import {useCallback} from "react";
 import * as SplashScreen from 'expo-splash-screen';
-import {Onboarding} from "./screens/Onboarding";
+import {Onboarding} from "./screens/onboarding/Onboarding";
+import { EntrancePage } from './screens/entrance/EntrancePage';
 
 //SplashScreen.preventAutoHideAsync();
 
@@ -26,7 +27,7 @@ export default function App() {
 
   return (
     <>
-      <Onboarding/>
+      <EntrancePage/>
     </>
   );
 }

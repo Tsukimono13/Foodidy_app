@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { FlatList, Image, ImageBackground, SafeAreaView, SectionList, Text, View } from 'react-native';
-import styled from 'styled-components/native';
+import { SafeAreaView, Text, View } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import { slides } from '../data/slides';
+import { slides } from '../../data/slides';
 
-import { OnboardingContent } from '../components/OnboardingContent';
-import { ButtonLabel } from '../components/ButtonLabel';
+import { OnboardingContent } from '../../components/OnboardingContent';
+import { ButtonLabel } from '../../components/ButtonLabel';
 
 
 export const Onboarding = () => {
