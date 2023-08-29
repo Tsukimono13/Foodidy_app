@@ -4,12 +4,19 @@ import styled from 'styled-components/native';
 
 type PropsType = {
 	link: string
+	handleSheetChanges?: any
 }
 
-export const Link:FC<PropsType> = ({link}) => {
+export const Link:FC<PropsType> = ({link, handleSheetChanges}) => {
 	const [isPressed, setIsPressed] = useState(false);
+
+const changeIndex = (index: number) => {
+	setIsPressed(!isPressed);
+	handleSheetChanges(index);
+}
+
 	return (
-		<TouchableOpacity onPress={() => setIsPressed(!isPressed)}>
+		<TouchableOpacity>
 			<LinkStyled style={{ color: isPressed ? '#87001E' : '#EE7001' }}>{link}</LinkStyled>
 		</TouchableOpacity>
 	);

@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import React, { FC } from 'react';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { slides } from '../../data/slides';
+import { OnboardingContent } from '../OnboardingContent';
+import { ButtonLabel } from '../ButtonLabel';
 
-import { OnboardingContent } from '../../components/OnboardingContent';
-import { ButtonLabel } from '../../components/ButtonLabel';
-
-
-export const Onboarding = () => {
-	const [showHomePage, setShowHomePage] = useState(false);
-
-	if (!showHomePage) {
-		return <AppIntroSlider
+type PropsType = {
+	setShowHomePage: any
+}
+export const Onboarding:FC<PropsType> = ({setShowHomePage}) => {
+	return (
+		<AppIntroSlider
 			data={slides}
 			renderItem={({ item }) => {
 				return <OnboardingContent slide={item} setShowHomePage={setShowHomePage}/>
@@ -25,14 +23,6 @@ export const Onboarding = () => {
 			onDone={() => {
 				setShowHomePage(true);
 			}}
-		/>;
-	}
-
-	return (
-		<SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-			<Text>Main Page</Text>
-		</SafeAreaView>
+		/>
 	);
 };
-
-

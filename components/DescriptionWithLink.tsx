@@ -9,15 +9,16 @@ type PropsType = {
 	textEnd?: string
 	links: string[]
 	style?: ViewStyle
+	handleSheetChanges?: any
 }
 
-export const DescriptionWithLink: FC<PropsType> = ({textStart, links, textEnd, style, textMiddle}) => {
+export const DescriptionWithLink: FC<PropsType> = ({textStart, links, textEnd, style, textMiddle, handleSheetChanges}) => {
 	return (
 		<View style={style}>
 			<TextInfo>{textStart}
 				{links.map((link, index) => (
 					<>
-						<Link link={link} key={index}/>
+						<Link link={link} key={index} handleSheetChanges={handleSheetChanges}/>
 						{index < links.length - 1 && textMiddle}
 					</>
 				))}

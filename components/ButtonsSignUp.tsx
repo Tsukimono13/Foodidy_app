@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { SignUpButtonType } from '../screens/entrance/EntrancePage';
+import { SignUpButtonType } from '../screens/signup/SignUp';
 import styled from 'styled-components/native';
 
 type PropsType = {

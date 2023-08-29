@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
-import {useCallback} from "react";
-import * as SplashScreen from 'expo-splash-screen';
-import {Onboarding} from "./screens/onboarding/Onboarding";
-import { EntrancePage } from './screens/entrance/EntrancePage';
+
+import { Home } from './screens/home/Home';
+import { SignUp } from './screens/signup/SignUp';
+import ServiceTerms from './components/bottomSheet/serviceTerms/ServiceTerms';
 
 //SplashScreen.preventAutoHideAsync();
 
@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <>
-      <EntrancePage/>
+      <SignUp/>
     </>
   );
 }
