@@ -7,13 +7,13 @@ type PropsType = {
 	handleSheetChanges?: any
 }
 
-export const Link:FC<PropsType> = ({link, handleSheetChanges}) => {
+export const Link: FC<PropsType> = ({ link, handleSheetChanges }) => {
 	const [isPressed, setIsPressed] = useState(false);
 
-const changeIndex = (index: number) => {
-	setIsPressed(!isPressed);
-	handleSheetChanges(index);
-}
+	const changeIndex = (index: number) => {
+		setIsPressed(!isPressed);
+		handleSheetChanges(index);
+	};
 
 	return (
 		<TouchableOpacity>
@@ -29,4 +29,4 @@ const LinkStyled = styled.Text`
   line-height: 18px;
   letter-spacing: 0.01em;
   text-align: center;
-`
+`;

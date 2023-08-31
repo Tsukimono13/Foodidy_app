@@ -36,5 +36,5 @@ const TextInfo = styled.Text`
   line-height: 18px;
   letter-spacing: 0.01em;
   text-align: center;
-	color: #2D000A;
-`
+  color: #2D000A;
+`;

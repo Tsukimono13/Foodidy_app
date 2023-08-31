@@ -157,7 +157,6 @@ const BgImage = styled.ImageBackground`
   align-items: center
 `
 
-
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
