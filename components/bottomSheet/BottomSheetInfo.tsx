@@ -3,10 +3,10 @@ import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { Text } from 'react-native';
 
 type PropsType = {
-	setIsOpen: (value: boolean)=>void
+	setIsOpen: (value: boolean) => void
 }
 
-export const BottomSheetInfo:FC<PropsType> = ({setIsOpen}) => {
+export const BottomSheetInfo: FC<PropsType> = ({ setIsOpen }) => {
 
 	const snapPoints = useMemo(() => ['50%', '90%'], []);
 	const bottomSheetRef = useRef<BottomSheet>(null);
@@ -21,7 +21,7 @@ export const BottomSheetInfo:FC<PropsType> = ({setIsOpen}) => {
 			}}
 
 		>
-			<BottomSheetView style={{flex: 1, alignItems: 'center'}}>
+			<BottomSheetView style={{ flex: 1, alignItems: 'center' }}>
 				<Text>Awesome 🎉</Text>
 			</BottomSheetView>
 		</BottomSheet>
