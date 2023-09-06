@@ -5,7 +5,7 @@ type PropsType = {
 	label: string
 }
 
-export const ButtonLabel:FC<PropsType> = ({label}) => {
+export const ButtonLabel: FC<PropsType> = ({ label }) => {
 	return (
 		<NextButton>
 			<ButtonText>
