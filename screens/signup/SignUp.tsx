@@ -49,8 +49,7 @@ const policy: TermsType[] = [
 			'(b) We may use your information to personalize your experience, such as suggesting relevant restaurants or dishes.\n' +
 			'(c) We may use your information to communicate with you, including sending promotional offers and updates.\n' +
 			'(d) Your data may be used for analytical purposes to understand user behavior and improve the App\'s performance.'},
-	{title: '3. How We Disclose Your Information', body: 'Hmgngnng'},
-	{title: '1.fngng', body: '(a) We may share your information with third-party service providers that assist us in providing and improving the App\'s services, such as payment processors and delivery partners.\n' +
+	{title: '3. How We Disclose Your Information', body: '(a) We may share your information with third-party service providers that assist us in providing and improving the App\'s services, such as payment processors and delivery partners.\n' +
 			'(b) We may share your information with restaurants or vendors to fulfill your orders.\n' +
 			'(c) We may share aggregated, anonymized data for analytics and market research purposes.\n' +
 			'(d) We may disclose your information if required by law or to protect our rights, privacy, safety, or property.'},
